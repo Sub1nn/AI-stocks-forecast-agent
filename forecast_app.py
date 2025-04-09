@@ -32,7 +32,7 @@ with st.sidebar:
 # Load data function
 def load_data():
     if use_demo:
-        data_path = '/Users/subin/Documents/LUT-Files/ADAML/Machine-learning/workshop2/stock-files/AMZN_2006-01-01_to_2018-01-01.csv'
+        data_path = 'https://raw.githubusercontent.com/Sub1nn/AI-stocks-forecast-agent/main/AMZN_2006-01-01_to_2018-01-01.csv'
         df = pd.read_csv(data_path)
         df['Date'] = pd.to_datetime(df['Date'])
         df.set_index('Date', inplace=True)
